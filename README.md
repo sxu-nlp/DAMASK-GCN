@@ -59,17 +59,18 @@ Change `ROOT_PATH` in `code/world.py`
 ## the experimental parameters on three data sets
 * lastfm  
 alpha:  graph1=0.4, graph2=0.4, graph3=0.4  
-decay=1e-3  
+decay=0.005  
 lr=0.001  
 lambda_q=100 
 beta=0.5 
 delta=1   
 k = [100,80,50,30]   
-k_value=5
+k_value=5   
+stop=30
 
 * ml-100k  
 alpha: graph1=0.4, graph2=0.4, graph3=0.4  
-decay=1e-5  
+decay=0.005   
 lr=0.001  
 lambda_q=50 
 beta=0.65 
@@ -79,13 +80,13 @@ k_value=5
 
 * ml-1m  
 alpha: graph1=0.4, graph2=0.4, graph3=0.4  
-decay=1e-4  
+decay=1e-3  
 lr=0.001  
 lambda_q=100 
 beta=0.3 
 delta=1.5   
 k=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,400,350,300,250,200,100]   
-k_value=5 
+k_value=10 
 
 
 
